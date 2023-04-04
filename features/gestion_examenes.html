@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--Fuente-->
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <!-- charts.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    li{
+      text-align: left;
+    }
+
+    /* Para versión móvil (Mobile First): */
+    [class *="col-"] {
+      width: 100%;
+      text-align: center;
+      border: 2px;
+      /*--no funciona el borde*/
+      padding: 2px;
+      background-color: lightyellow;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!--6. Interfaz para ingreso y visualización de tablas de históricos de exámenes de distinto
+tipo (Hemograma, perfil lipídico, colesterol, triglicéridos, orina, perfil bioquímico,
+coagulación y otros). Tabla de datos para cada exámen, al menos los aquí
+mencionados. 4 gráficos chart.js para visualización de datos relevantes: 2 de línea y 2
+de barra.-->
+  <header>
+
+  </header>
+  <main>
+    <div class="ingreso-examenes">
+      <div class="row">
+        <div class="col-"> <h1>Ingreso de examenes</h1></div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-">
+          <p><b>Nombre del paciente</b></p>
+        </div>
+        <div class="col-">
+          <input type="text" width="100%">
+         </div>
+      </div>
+        <div class="row">
+        <div class="col-">
+          <p>Nombre del examen</p>
+          <select>
+            <option>Hemograma</option>
+            <option>Colesterol</option>
+            <option>Perfil lipídico</option>
+            <option>Triglicéridos</option>
+            <option>Orina</option>
+            <option>Perfil bioquímico</option>
+            <option>Coagulación</option>
+          </select>
+        </div>
+        <div class="col-">
+          <p>Fecha del examen</p>
+          <input type="time">
+          <input type="date">
+        </div>
+        <div class="col-">
+          <p>Adjuntar resultados</p>
+          <input type="file">
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+
+  </footer>
+  
+</body>
+
+</html>
+
+  </footer>
+  
+</body>
+
+</html>
