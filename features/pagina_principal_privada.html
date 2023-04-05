@@ -21,6 +21,7 @@ y/o administrar la información (Familiares o personal de salud).-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
 <body>
 <!--Barra de Navegacion-->
+<<<<<<< HEAD:features/pagina_principal_privada.html
 <div class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="row">
@@ -30,6 +31,27 @@ y/o administrar la información (Familiares o personal de salud).-->
           <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span
               class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           <a href="#" class="navbar-brand">Sistema de hospital</a>
+=======
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sistema de Hospitales</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pagina_principal_publica.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="editar_paciente.html">Gestión de Pacientes</a>
+              </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+>>>>>>> 08ffaacfa178f947d42a7db5fde6e11fa570fee4:features/pagina_principal_privada,.html
         </div>
 
         <div class="navbar-collapse collapse" id="mobile_menu">
@@ -68,10 +90,10 @@ y/o administrar la información (Familiares o personal de salud).-->
               <div class="lateral">
                 <header>Menú</header>
                 <ul class="menuVert">
-                <li><a href="#">Agregar Paciente</a></li>
-                <li><a href="#">Gestionar Paciente</a></li>
-                <li><a href="#">Ver Informacion</a></li>
-                <li><a href="/">Volver</a></li>
+                <li><a href="pagina_principal_publica.html">Agregar Paciente</a></li>
+                <li><a href="editar_paciente.html">Gestionar Paciente</a></li>
+                <li><a href="">Ver Informacion</a></li>
+                <li><a href="index.html">Volver</a></li>
                 </ul>
               </div>
             </div>
@@ -83,8 +105,8 @@ y/o administrar la información (Familiares o personal de salud).-->
               <h5 class="card-title">Informacion de Paciente</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Nombre: Lorem</h6>
               <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita repellendus nulla aliquid perferendis iure ratione quibusdam. Sequi ab obcaecati iste facilis</p>
-              <a href="#" class="card-link">Editar</a>
-              <a href="#" class="card-link">Borrar</a>
+              <a href="editar_paciente.html" class="card-link">Editar</a>
+              <a href="editar_paciente.html" class="card-link">Borrar</a>
             </div>
           </div>
         </div>
