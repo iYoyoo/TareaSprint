@@ -1,3 +1,69 @@
 5. Interfaz para ingreso y visualización de datos de enfermedades y condiciones base
 del paciente, indicando diagnóstico, fecha, inicio de tratamientos y otros datos
 importantes.
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Crear Usuario</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Fuente-->
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- charts.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <style>{
+        box-sizing: border-box;
+    }
+        /* Para versión móvil (Mobile First): */
+        [class*="col-"] {
+        width: 100%;
+        border: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-between align-items-center">
+            <h1>Bienvenid@</h1>
+            <a href="/dashboard" class="btn btn-info">Nuevo Ingreso</a>
+            <a href="/logout" class="btn btn-danger">Cerrar Sesión</a>
+        </header>
+
+
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción y/o Enfermedad</label>
+                <textarea id="description" name="description" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="instructions">Tratamiento</label>
+                <textarea id="instructions" name="instructions" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="date_made">Fecha de Ingreso</label>
+                <input type="date" id="date_made" name="date_made" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>¿Presenta fiebre u otro Sintoma?</label>
+                <input type="radio" name="under_YES" id="under_YES" value="1" checked>
+                <label for="under_YES">SI</label> - 
+
+                <input type="radio" name="under_NO" id="under_NO" value="0">
+                <label for="under_NO">NO</label>
+            </div>
+            <input type="submit" value="Guardar" class="btn btn-success">
+        </form>
+
+    </div>
+</body>
+</html>

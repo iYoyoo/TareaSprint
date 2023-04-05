@@ -1,0 +1,86 @@
+<!-- punto 4-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Crear Usuario</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Fuente-->
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- charts.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <style>{
+        box-sizing: border-box;
+    }
+        /* Para versión móvil (Mobile First): */
+        [class*="col-"] {
+        width: 100%;
+        border: red;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center">
+        <h1>Bienvenid@</h1>
+        <a href="/dashboard" class="btn btn-info">Pág Principal</a>
+        <a href="/logout" class="btn btn-danger">Cerrar Sesión</a>
+    </header>
+    <!--hacer login-->
+    <div class="container">
+        <div class="row" >
+            <div class="col-4">
+                <h2>Agregar Personal o Familiar</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="first_name">Nombre</label>
+                        <input type="text" id="first_name" name="first_name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Apellido</label>
+                        <input type="text" id="last_name" name="last_name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirmación Contraseña</label>
+                        <input type="password" id="confirm_password" name="confirm_password" class="form-control">
+                    </div>
+                    <input type="submit" value="Registrarme" class="btn btn-info">
+                </form>
+            </div>
+            <div class="col-4">
+                <h2>Inicia Sesión</h2>
+                <form action="/login" method="post">
+                    <div class="form-group">
+                        <label for="email2">E-mail</label>
+                        <input type="email" id="email2" name="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Contraseña</label>
+                        <input type="password" id="password2" name="password" class="form-control">
+                    </div>
+                    <input type="submit" value="Inicia Sesión" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="script.js"></script>
+<script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

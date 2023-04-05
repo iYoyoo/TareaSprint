@@ -9,5 +9,71 @@ privado del sitio y activa una barra de navegación lateral para cada zona estab
 en la barra superior.
 
 4. Interfaz para creación y administración de usuarios adicionales que puedes visualizar
-y/o administrar la información (Familiares o personal de salud).
+y/o administrar la información (Familiares o personal de salud).-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Privada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<!--Barra de Navegacion-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sistema de Hospitales</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gestión de Pacientes</a>
+              </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--Container A-->
+      <div class="container-fluid">
+            <div class="col-6">
+              <div class="lateral">
+                <header>Menú</header>
+                <ul class="menuVert">
+                <li><a href="#">Agregar Paciente</a></li>
+                <li><a href="#">Gestionar Paciente</a></li>
+                <li><a href="#">Ver Informacion</a></li>
+                <li><a href="/">Volver</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      <!--ContainerB-->
+        <div class="col-6">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Informacion de Paciente</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Nombre: Lorem</h6>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita repellendus nulla aliquid perferendis iure ratione quibusdam. Sequi ab obcaecati iste facilis</p>
+              <a href="#" class="card-link">Editar</a>
+              <a href="#" class="card-link">Borrar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</html>
 
