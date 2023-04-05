@@ -4,9 +4,10 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <title>gestion-examen</title>
   <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script src="../js/script.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -18,7 +19,8 @@
     * {
       box-sizing: border-box;
     }
-    li{
+
+    li {
       text-align: left;
     }
 
@@ -31,7 +33,6 @@
       padding: 2px;
       background-color: lightyellow;
     }
-
   </style>
 </head>
 
@@ -45,56 +46,47 @@ de barra.-->
 
   </header>
   <main>
-    <div class="ingreso-examenes">
+    <div class="containerge">
       <div class="row">
-        <div class="col-"> <h1>Ingreso de examenes</h1></div>
+        <div class="col-12">
+          <h1>Datos del paciente</h1>
+          <p>Nombre: <span id="nombre">Juan Pérez</span></p>
+          <p>RUT: <span id="rut">12345678 - 9</span></p>
+          <p>Fecha de nacimiento: <span id="fecha-nacimiento">01/01/1990</span></p>
+          <p>Edad: <span id="edad">32</span></p>
+          <p>Dirección: <span id="direccion">Av. Siempre Viva 123</span></p>
+          <img src="imagen-paciente.jpg" alt="Imagen del paciente">
+        </div>
       </div>
-      <br>
-      <br>
       <div class="row">
-        <div class="col-">
-          <p><b>Nombre del paciente</b></p>
+        <div class="col-6">
+          <label>
+            <input type="radio" id="boton1" name="opcion" value="ingreso" onclick= "ingreso_consulta()"> Ingreso
+          </label>
         </div>
-        <div class="col-">
-          <input type="text" width="100%">
-         </div>
-      </div>
-        <div class="row">
-        <div class="col-">
-          <p>Nombre del examen</p>
-          <select>
-            <option>Hemograma</option>
-            <option>Colesterol</option>
-            <option>Perfil lipídico</option>
-            <option>Triglicéridos</option>
-            <option>Orina</option>
-            <option>Perfil bioquímico</option>
-            <option>Coagulación</option>
-          </select>
-        </div>
-        <div class="col-">
-          <p>Fecha del examen</p>
-          <input type="time">
-          <input type="date">
-        </div>
-        <div class="col-">
-          <p>Adjuntar resultados</p>
-          <input type="file">
+        <div class="col-6">
+          <label>
+            <input type="radio" id="boton2" name="opcion" value="consulta"> Consulta
+          </label>
         </div>
       </div>
     </div>
-
+   
+  </div>
+     
+</div>
+    
   </main>
   <footer>
 
   </footer>
-  
+
 </body>
 
 </html>
 
-  </footer>
-  
+</footer>
+
 </body>
 
 </html>
